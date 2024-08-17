@@ -47,3 +47,29 @@ body {
     @apply max-w-4xl bg-white p-4 rounded-xl  m-auto shadow flex items-center justify-between px-12;
   }
 }
+.splide__pagination {
+  position: relative !important;
+  z-index: 1;
+  top: 70px !important;
+}
+.splide__pagination__page.is-active {
+  transform: scale(1.2);
+  z-index: 1;
+  width: 44px;
+  height: 13px;
+  border-radius: 40px;
+  background: #f48d06;
+}
+.splide__pagination__page {
+  background: #ccc;
+  border: 0;
+  border-radius: 50%;
+  display: inline-block;
+  height: 15px;
+  margin: 3px;
+  opacity: 0px;
+  /* padding: 0; */
+  position: relative;
+  transition: transform 0.2s linear;
+  width: 15px;
+}
